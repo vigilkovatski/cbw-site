@@ -1,0 +1,14 @@
+
+:root{--gold:#c9a45d;--red:#b71c1c;--blue:#1e4fcf;--bg:#050505;--panel:#101014;}
+*{box-sizing:border-box} body{margin:0;font-family:Georgia,serif;background:var(--bg);color:#f5f5f5}
+nav{position:sticky;top:0;background:#000;padding:15px;border-bottom:1px solid #333}
+nav a{color:var(--gold);margin-right:18px;text-decoration:none}
+.hero{min-height:80vh;display:flex;align-items:center;justify-content:center;text-align:center;
+background:radial-gradient(circle,rgba(201,164,93,.15),transparent 40%),linear-gradient(90deg,rgba(183,28,28,.12),transparent 50%,rgba(30,79,207,.12));}
+.container{max-width:1100px;margin:auto;padding:60px 20px}
+h1,h2,h3{color:var(--gold)}
+.btn{display:inline-block;padding:12px 24px;border:2px solid var(--gold);color:var(--gold);text-decoration:none}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.card{background:var(--panel);padding:20px;border-radius:8px}
+footer{padding:40px;text-align:center;border-top:1px solid #333}
+.logo-placeholder{width:220px;height:220px;border:2px dashed var(--gold);display:flex;align-items:center;justify-content:center;margin:auto}
