@@ -1,1 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Church of Blood and Water</title>
 
+<style>
+:root{
+    --bg:#050505;
+    --panel:#0d0d12;
+    --gold:#c9a45d;
+    --red:#c51f1f;
+    --blue:#1e4fcf;
+    --white:#f5f5f5;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Georgia, serif;
+    background:var(--bg);
+    color:var(--white);
+    line-height:1.6;
+}
+
+a{
+    color:var(--gold);
+    text-decoration:none;
+}
+
+header{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:40px;
+    background:
+        radial-gradient(circle at center,
+        rgba(201,164,93,.15),
+        transparent 45%),
+        linear-gradient(to right,
+        rgba(197,31,31,.12),
+        transparent 35%,
+        transparent 65%,
+        rgba(30,79,207,.12));
+}
+
+.hero{
+    max-width:900px;
+}
+
+.logo{
+    width:260px;
+    max-width:80%;
+    margin-bottom:30px;
+}
+
+h1{
+    font-size:4rem;
+    color:var(--gold);
+    letter-spacing:3px;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    font-size:1.5rem;
+    color:white;
+    margin-bottom:30px;
+}
+
+.motto{
+    font-size:1.2rem;
+    color:var(--gold);
+    margin-bottom:40px;
+}
+
+.button{
+    display:inline-block;
+    padding:14px 30px;
+    border:2px solid var(--gold);
+    color:var(--gold);
+    transition:.3s;
+}
+
+.button:hover{
+    background:var(--gold);
+    color:black;
+}
+
+section{
+    padding:90px 20px;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+}
+
+.section-title{
+    text-align:center;
+    color:var(--gold);
+    margin-bottom:50px;
+    font-size:2.3rem;
+}
+
+.scripture{
+    text-align:center;
+    font-size:1.3rem;
+    max-width:800px;
+    margin:auto;
+    color:#ddd;
+}
+
+.scripture-reference{
+    color:var(--gold);
+    margin-top:15px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:var(--panel);
+    border:1px solid rgba(201,164,93,.25);
+    padding:30px;
+    border-radius:8px;
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:var(--gold);
+}
+
+.blood{
+    border-top:4px solid var(--red);
+}
+
+.water{
+    border-top:4px solid var(--blue);
+}
+
+.light{
+    border-top:4px solid var(--gold);
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:8px;
+    border:1px solid rgba(201,164,93,.3);
+}
+
+footer{
+    text-align:center;
+    padding:50px 20px;
+    border-top:1px solid rgba(201,164,93,.2);
+}
+
+footer p{
+    margin:10px 0;
+}
+
+.nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:rgba(0,0,0,.85);
+    backdrop-filter:blur(8px);
+    z-index:1000;
+}
+
+.nav-inner{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 20px;
+}
+
+.nav-links{
+    display:flex;
+    gap:20px;
+}
+
+@media(max-width:768px){
+
+    h1{
+        font-size:2.5rem;
+    }
+
+    .subtitle{
+        font-size:1.2rem;
+    }
+
+    .nav-links{
+        display:none;
+    }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+    <div class="nav-inner">
+        <strong style="color:#c9a45d;">CBW</strong>
+
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#beliefs">Beliefs</a>
+            <a href="#scripture">Scripture</a>
+            <a href="#gallery">Gallery</a>
+        </div>
+    </div>
+</nav>
+
+<header>
+
+<div class="hero">
+
+    <img src="logo.png" alt="Church of Blood and Water Logo" class="logo">
+
+    <h1>THE CHURCH OF BLOOD AND WATER</h1>
+
+    <p class="subtitle">
+        One Savior. Two Streams. Eternal Life.
+    </p>
+
+    <p class="motto">
+        Redeemed by His Blood. Born of His Water. Led by His Light.
+    </p>
+
+    <a href="#about" class="button">
+        Learn More
+    </a>
+
+</div>
+
+</header>
+
+<section id="scripture">
+<div class="container">
+
+<h2 class="section-title">Founding Scripture</h2>
+
+<div class="scripture">
+    “One of the soldiers pierced His side, and immediately blood and water came out.”
+    <div class="scripture-reference">
+        John 19:34
+    </div>
+</div>
+
+</div>
+</section>
+
+<section id="about">
+<div class="container">
+
+<h2 class="section-title">About Us</h2>
+
+<div class="scripture">
+The Church of Blood and Water centers its faith on Jesus Christ and the
+symbolism of the Blood and Water that flowed from His side.
+Blood represents redemption.
+Water represents renewal.
+Light represents the glory of God revealed through Christ.
+</div>
+
+</div>
+</section>
+
+<section id="beliefs">
+<div class="container">
+
+<h2 class="section-title">The Three Gifts</h2>
+
+<div class="cards">
+
+<div class="card blood">
+<h3>Blood</h3>
+<p>
+The sacrifice that redeems.
+The covenant sealed in love.
+The gift of salvation through Christ.
+</p>
+</div>
+
+<div class="card water">
+<h3>Water</h3>
+<p>
+The cleansing that renews.
+The grace that restores.
+The new life given through faith.
+</p>
+</div>
+
+<div class="card light">
+<h3>Light</h3>
+<p>
+The glory of God.
+The truth that guides.
+The hope that shines in darkness.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section id="gallery">
+<div class="container">
+
+<h2 class="section-title">Symbol & Artwork</h2>
+
+<div class="gallery">
+
+<img src="logo.png" alt="CBW Emblem">
+
+<img src="poster1.jpg" alt="Church Poster">
+
+<img src="poster2.jpg" alt="Church Artwork">
+
+</div>
+
+</div>
+</section>
+
+<footer>
+
+<p style="color:#c9a45d;">
+The Church of Blood and Water
+</p>
+
+<p>
+One Faith • One Lord • One Mission
+</p>
+
+<p>
+© 2025 Church of Blood and Water
+</p>
+
+</footer>
+
+</body>
+</html>
